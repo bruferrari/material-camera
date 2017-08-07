@@ -88,7 +88,7 @@ abstract class BaseCameraFragment extends Fragment
       };
 
   @Override
-  public final View onCreateView(
+  public View onCreateView(
       LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     return inflater.inflate(R.layout.mcam_fragment_videocapture, container, false);
   }
