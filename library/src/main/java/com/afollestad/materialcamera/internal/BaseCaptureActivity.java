@@ -85,7 +85,7 @@ public abstract class BaseCaptureActivity extends AppCompatActivity
   }
 
   @Override
-  protected final void onCreate(Bundle savedInstanceState) {
+  protected void onCreate(Bundle savedInstanceState) {
     AppCompatDelegate.setCompatVectorFromResourcesEnabled(true);
     super.onCreate(savedInstanceState);
 

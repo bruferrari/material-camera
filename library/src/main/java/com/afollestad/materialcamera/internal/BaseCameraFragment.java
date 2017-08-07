@@ -88,7 +88,7 @@ abstract class BaseCameraFragment extends Fragment
       };
 
   @Override
-  public final View onCreateView(
+  public View onCreateView(
       LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
     return inflater.inflate(R.layout.mcam_fragment_videocapture, container, false);
   }
@@ -133,14 +133,14 @@ abstract class BaseCameraFragment extends Fragment
     mButtonFacing.setOnClickListener(this);
     mButtonFlash.setOnClickListener(this);
 
-    int primaryColor = getArguments().getInt(CameraIntentKey.PRIMARY_COLOR);
-    if (CameraUtil.isColorDark(primaryColor)) {
-      mIconTextColor = ContextCompat.getColor(getActivity(), R.color.mcam_color_light);
-      primaryColor = CameraUtil.darkenColor(primaryColor);
-    } else {
-      mIconTextColor = ContextCompat.getColor(getActivity(), R.color.mcam_color_dark);
-    }
-    view.findViewById(R.id.controlsFrame).setBackgroundColor(primaryColor);
+//    int primaryColor = getArguments().getInt(CameraIntentKey.PRIMARY_COLOR);
+//    if (CameraUtil.isColorDark(primaryColor)) {
+//      mIconTextColor = ContextCompat.getColor(getActivity(), R.color.mcam_color_light);
+//      primaryColor = CameraUtil.darkenColor(primaryColor);
+//    } else {
+//      mIconTextColor = ContextCompat.getColor(getActivity(), R.color.mcam_color_dark);
+//    }
+//    view.findViewById(R.id.controlsFrame).setBackgroundColor(primaryColor);
     mRecordDuration.setTextColor(mIconTextColor);
 
     if (mMediaRecorder != null && mIsRecording) {
